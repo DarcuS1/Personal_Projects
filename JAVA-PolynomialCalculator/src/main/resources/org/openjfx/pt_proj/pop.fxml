@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane hgap="14.0" maxHeight="+Infinity" maxWidth="+Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          prefHeight="135.0" prefWidth="307.0"
+          style="-fx-base: #0094b6; -fx-background-color: #0094b6; -fx-background-radius: 0;" vgap="20.0"
+          xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="org.openjfx.pt_proj.controller.Controller">
+    <children>
+        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0"
+                   GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="TOP">
+            <image>
+                <!-- place holder -->
+            </image>
+        </ImageView>
+        <VBox maxHeight="+Infinity" maxWidth="+Infinity" minHeight="-Infinity" prefHeight="68.0" prefWidth="213.0"
+              spacing="7.0" style="-fx-base: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <children>
+                <Label fx:id="messageLabel" style="-fx-background-color: #0094b6;" text="Passwords do not match"
+                       textAlignment="LEFT" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="13.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="detailsLabel" text="Please verify your passwords" textAlignment="LEFT" wrapText="true">
+                    <font>
+                        <Font size="12.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <HBox maxHeight="-Infinity" maxWidth="+Infinity" minHeight="-Infinity" minWidth="-Infinity"
+              GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <HBox fx:id="actionParent" alignment="CENTER">
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                </HBox>
+                <Pane maxWidth="+Infinity" style="-fx-background-radius: 10;" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Button fx:id="okButton" layoutX="37.0" layoutY="-12.0" minWidth="80.0" mnemonicParsing="false"
+                                style="-fx-base: #18496e;" text="Ok"/>
+                    </children>
+                </Pane>
+                <HBox fx:id="okParent" alignment="CENTER"/>
+            </children>
+        </HBox>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints hgrow="NEVER" maxWidth="68.0" minWidth="-Infinity" prefWidth="68.0"/>
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="Infinity" minWidth="-Infinity"
+                           prefWidth="234.0"/>
+    </columnConstraints>
+    <padding>
+        <Insets bottom="14.0" left="14.0" right="14.0" top="14.0"/>
+    </padding>
+    <rowConstraints>
+        <RowConstraints maxHeight="+Infinity" minHeight="-Infinity" valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="NEVER"/>
+    </rowConstraints>
+</GridPane>
+

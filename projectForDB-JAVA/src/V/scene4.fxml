@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="1262.0" style="-fx-background-color: #093172;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLDocumentController">
+   <children>
+      <TextField layoutX="467.0" layoutY="24.0" prefHeight="71.0" prefWidth="328.0" style="-fx-base: #62b2cb;" text="Interesting facts about the World Cup">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <GridPane layoutX="58.0" layoutY="112.0" prefHeight="531.0" prefWidth="1147.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #b0b6c1;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="105.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/DALL·E%202023-01-04%2021.02.53%20-%20Cristiano%20Ronaldo%20holding%20the%20world%20cup%20in%20digital%20art,%20backround%20is%20dark%20blue%20with%20hints%20of%20quantum%20technology%20pictures.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="347.0" layoutY="30.0" prefHeight="25.0" prefWidth="188.0" text="Most trophies" />
+                  <Button layoutX="347.0" layoutY="104.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" style="-fx-base: #62b2cb;" text="Acces" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #b0b6c1;" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="317.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/DALL·E%202023-01-04%2021.02.53%20-%20Cristiano%20Ronaldo%20holding%20the%20world%20cup%20in%20digital%20art,%20backround%20is%20dark%20blue%20with%20hints%20of%20quantum%20technology%20pictures.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="38.0" layoutY="30.0" prefHeight="25.0" prefWidth="188.0" text="Most Goals-Team" />
+                  <Button layoutX="38.0" layoutY="99.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" style="-fx-base: #62b2cb;" text="Acces" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #b0b6c1;" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="109.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/DALL·E%202023-01-04%2021.02.53%20-%20Cristiano%20Ronaldo%20holding%20the%20world%20cup%20in%20digital%20art,%20backround%20is%20dark%20blue%20with%20hints%20of%20quantum%20technology%20pictures.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="358.0" layoutY="36.0" prefHeight="25.0" prefWidth="188.0" text="Most golas-Player" />
+                  <Button layoutX="358.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" style="-fx-base: #62b2cb;" text="Acces" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #b0b6c1;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="314.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" style="-fx-base: #b0b6c1;">
+                     <image>
+                        <Image url="@images/DALL·E%202023-01-04%2021.02.53%20-%20Cristiano%20Ronaldo%20holding%20the%20world%20cup%20in%20digital%20art,%20backround%20is%20dark%20blue%20with%20hints%20of%20quantum%20technology%20pictures.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="41.0" layoutY="38.0" prefHeight="25.0" prefWidth="188.0" text="Most Entries" />
+                  <Button layoutX="41.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" style="-fx-base: #62b2cb;" text="Acces" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #b0b6c1;" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="106.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/DALL·E%202023-01-04%2021.02.53%20-%20Cristiano%20Ronaldo%20holding%20the%20world%20cup%20in%20digital%20art,%20backround%20is%20dark%20blue%20with%20hints%20of%20quantum%20technology%20pictures.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="346.0" layoutY="30.0" prefHeight="25.0" prefWidth="188.0" text="Biggest Stadium" />
+                  <Button layoutX="346.0" layoutY="97.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" style="-fx-base: #62b2cb;" text="Acces" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #b0b6c1;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="319.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-base: #b0b6c1;">
+                     <image>
+                        <Image url="@images/DALL·E%202023-01-04%2021.02.53%20-%20Cristiano%20Ronaldo%20holding%20the%20world%20cup%20in%20digital%20art,%20backround%20is%20dark%20blue%20with%20hints%20of%20quantum%20technology%20pictures.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="61.0" layoutY="35.0" prefHeight="25.0" prefWidth="188.0" text="Awards" />
+                  <Button layoutX="61.0" layoutY="101.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" style="-fx-base: #62b2cb;" text="Acces" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <Button layoutX="557.0" layoutY="676.0" mnemonicParsing="false" onMouseClicked="#handleExploreMore" style="-fx-base: #62b2cb;" text="More for SQL Enthusiasts" />
+      <Button layoutX="1193.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#handleClose" style="-fx-base: #62b2cb;" text="X" />
+      <Button layoutX="32.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#handleBackSignup" style="-fx-base: #62b2cb;" text="Back" />
+   </children>
+</AnchorPane>

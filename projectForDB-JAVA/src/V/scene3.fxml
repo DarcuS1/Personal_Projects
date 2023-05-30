@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLDocumentController">
+    <children>
+        <TabPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0a1935;" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab style="-fx-base: #18496e;" styleClass="SRC_OVER" text="Teams">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #0a1935;">
+                            <children>
+                                <HBox layoutX="321.0" prefHeight="681.0" prefWidth="959.0">
+                                    <children>
+                                        <TableView fx:id="tableViewTeamsUser" layoutX="60.0" layoutY="57.0" prefHeight="681.0" prefWidth="959.0">
+                                            <columns>
+                                                <TableColumn fx:id="team_idColumn2" prefWidth="148.0" text="team_id" />
+                                                <TableColumn fx:id="team_nameColumn" prefWidth="145.0" text="team_name" />
+                                                <TableColumn fx:id="team_codeColumn" prefWidth="203.0" text="team_code" />
+                                                <TableColumn fx:id="region_nameColumn" prefWidth="161.0" text="region_name" />
+                                                <TableColumn fx:id="confederation_idColumn" prefWidth="289.0" text="confederation_id" />
+                                            </columns>
+                                        </TableView>
+
+                                    </children>
+                                </HBox>
+                                <VBox layoutX="-1.0" layoutY="265.0" prefHeight="416.0" prefWidth="320.0" style="-fx-background-color: #0094b6;">
+                                    <children>
+                                        <Label alignment="CENTER" contentDisplay="TOP" prefHeight="31.0" prefWidth="300.0" style="-fx-base: #7da9f4;" text="Enter Team Details" textFill="WHITE">
+                                            <padding>
+                                                <Insets top="10.0" />
+                                            </padding>
+                                        </Label>
+                                        <TextField fx:id="teams1" prefHeight="31.0" prefWidth="239.0" promptText="team_id" />
+                                        <TextField fx:id="teams2" prefHeight="31.0" prefWidth="237.0" promptText="team_name" />
+                                        <TextField fx:id="teams3" prefHeight="31.0" prefWidth="235.0" promptText="team_code" />
+                                        <TextField fx:id="teams4" promptText="region_name" />
+                                        <TextField fx:id="teams5" promptText="confederation_id" />
+                                        <Button mnemonicParsing="false" onMouseClicked="#addTeams" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Add Team" textFill="WHITE" />
+                                        <Button fx:id="clearFields" mnemonicParsing="false" onMouseClicked="#clearHandle" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Clear" textFill="WHITE" />
+                                        <Button mnemonicParsing="false" onMouseClicked="#teamsTablePopulate" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Load Data" textFill="WHITE" />
+                                        <Button mnemonicParsing="false" onMouseClicked="#deleteTeams" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Delete Team" textFill="WHITE" />
+                                        <Button mnemonicParsing="false" onMouseClicked="#updateTeams" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Update Team" textFill="WHITE" />
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                    </padding>
+                                </VBox>
+                                <ImageView fitHeight="230.0" fitWidth="230.0" layoutX="44.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="447.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="1006.0" AnchorPane.topAnchor="14.0">
+                                    <image>
+                                        <Image url="@images/DALL·E%202023-01-04%2021.02.46%20-%20Cristiano%20Ronaldo%20holding%20the%20world%20cup%20in%20digital%20art,%20backround%20is%20dark%20blue%20with%20hints%20of%20quantum%20technology%20pictures.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab style="-fx-base: #18496e;" styleClass="SRC_OVER" text="Players">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <HBox layoutX="321.0" prefHeight="681.0" prefWidth="959.0">
+                                            <children>
+                                                <TableView fx:id="tableViewPlayersUser" layoutX="60.0" layoutY="57.0" prefHeight="681.0" prefWidth="958.0">
+                                                    <columns>
+                                                        <TableColumn fx:id="player_idColumn" prefWidth="155.0" text="player_id" />
+                                                        <TableColumn fx:id="player_familynameColumn" prefWidth="141.0" text="family_name" />
+                                                        <TableColumn fx:id="palyer_givennameColumn" prefWidth="146.0" text="given_name" />
+                                                        <TableColumn fx:id="goalkeeperColumn" prefWidth="116.0" text="goal_keeper" />
+                                                        <TableColumn fx:id="defenderColumn" prefWidth="113.0" text="defender" />
+                                                        <TableColumn fx:id="midfielderColumn" prefWidth="141.0" text="midfilelder" />
+                                                        <TableColumn fx:id="forwardColumn" prefWidth="145.0" text="forward" />
+                                                    </columns>
+                                                </TableView>
+                                            </children>
+                                        </HBox>
+                                        <VBox layoutX="-1.0" layoutY="265.0" prefHeight="416.0" prefWidth="320.0" style="-fx-background-color: #0094b6;">
+                                            <children>
+                                                <Label alignment="CENTER" blendMode="SCREEN" contentDisplay="TOP" prefHeight="31.0" prefWidth="300.0" style="-fx-base: #7da9f4;" text="Enter Team Details" textFill="WHITE">
+                                                    <padding>
+                                                        <Insets top="10.0" />
+                                                    </padding>
+                                                </Label>
+                                                <TextField fx:id="players1" prefHeight="31.0" prefWidth="239.0" promptText="player_id" />
+                                                <TextField fx:id="players2" prefHeight="31.0" prefWidth="237.0" promptText="family_name" />
+                                    <TextField fx:id="players3" prefHeight="31.0" prefWidth="237.0" promptText="given_name" />
+                                                <TextField fx:id="players4" prefHeight="31.0" prefWidth="235.0" promptText="goalkeeper" />
+                                                <TextField fx:id="players5" prefHeight="31.0" prefWidth="231.0" promptText="defender" />
+                                                <TextField fx:id="players6" promptText="midfielder" />
+                                                <TextField fx:id="players7" promptText="forward" />
+                                                <Button mnemonicParsing="false" onMouseClicked="#addPlayers" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Add Player" textFill="WHITE" />
+                                                <Button fx:id="clearFields1" mnemonicParsing="false" onMouseClicked="#clearHandle" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Clear" textFill="WHITE" />
+                                                <Button mnemonicParsing="false" onMouseClicked="#playersTablePopulate" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Load Data" textFill="WHITE" />
+                                                <Button mnemonicParsing="false" onMouseClicked="#deletePlayers" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Delete Player" textFill="WHITE" />
+                                                <Button mnemonicParsing="false" onMouseClicked="#updatePlayers" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Update Player" textFill="WHITE" />
+                                            </children>
+                                            <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                            </padding>
+                                        </VBox>
+                                        <ImageView fitHeight="230.0" fitWidth="230.0" layoutX="45.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="447.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="1006.0" AnchorPane.topAnchor="14.0">
+                                            <image>
+                                                <Image url="@images/DALL·E%202023-01-04%2021.02.46%20-%20Cristiano%20Ronaldo%20holding%20the%20world%20cup%20in%20digital%20art,%20backround%20is%20dark%20blue%20with%20hints%20of%20quantum%20technology%20pictures.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab style="-fx-base: #18496e;" styleClass="SRC_OVER" text="Stadiums">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <HBox layoutX="321.0" prefHeight="681.0" prefWidth="959.0">
+                                            <children>
+                                                <TableView fx:id="tableViewStadiumsUser" layoutX="60.0" layoutY="57.0" prefHeight="681.0" prefWidth="972.0">
+                                                    <columns>
+                                                        <TableColumn fx:id="stadium_idColumn" prefWidth="217.0" text="stadium_id" />
+                                                        <TableColumn fx:id="stadium_nameColumn" prefWidth="253.0" text="stadium_name" />
+                                                        <TableColumn fx:id="city_nameColumn" prefWidth="230.0" text="city_name" />
+                                                        <TableColumn fx:id="stadium_capacityColumn" prefWidth="256.0" text="stadium_capacity" />
+                                                    </columns>
+                                                </TableView>
+                                            </children>
+                                        </HBox>
+                                        <VBox layoutX="-1.0" layoutY="265.0" prefHeight="416.0" prefWidth="320.0" style="-fx-background-color: #0094b6;">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="TOP" prefHeight="31.0" prefWidth="300.0" style="-fx-base: #7da9f4;" text="Enter Team Details" textFill="WHITE">
+                                                    <padding>
+                                                        <Insets top="10.0" />
+                                                    </padding>
+                                                </Label>
+                                                <TextField fx:id="stadiums1" prefHeight="31.0" prefWidth="239.0" promptText="stadium_id" />
+                                                <TextField fx:id="stadiums2" prefHeight="31.0" prefWidth="237.0" promptText="stadium_name" />
+                                                <TextField fx:id="stadiums3" prefHeight="31.0" prefWidth="235.0" promptText="city_name" />
+                                                <TextField fx:id="stadiums4" promptText="stadium_capacity" />
+                                                <Button mnemonicParsing="false" onMouseClicked="#addStadiums" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Add Stadium" textFill="WHITE" />
+                                                <Button fx:id="clearFields3" mnemonicParsing="false" onMouseClicked="#clearHandle" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Clear" textFill="WHITE" />
+                                                <Button mnemonicParsing="false" onMouseClicked="#stadiumsTablePopulate" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Load Data" textFill="WHITE" />
+                                                <Button mnemonicParsing="false" onMouseClicked="#deleteStadiums" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Delete Stadium" textFill="WHITE" />
+                                                <Button mnemonicParsing="false" onMouseClicked="#updateSatdiums" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Update Stadium" textFill="WHITE" />
+                                            </children>
+                                            <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                            </padding>
+                                        </VBox>
+                                    </children>
+                                </AnchorPane>
+                                <ImageView fitHeight="230.0" fitWidth="230.0" layoutX="39.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="447.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="1006.0" AnchorPane.topAnchor="14.0">
+                                    <image>
+                                        <Image url="@images/DALL·E%202023-01-04%2021.02.46%20-%20Cristiano%20Ronaldo%20holding%20the%20world%20cup%20in%20digital%20art,%20backround%20is%20dark%20blue%20with%20hints%20of%20quantum%20technology%20pictures.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab style="-fx-base: #18496e;" styleClass="SRC_OVER" text="Awards">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <HBox layoutX="321.0" prefHeight="681.0" prefWidth="959.0">
+                                            <children>
+                                                <TableView fx:id="tableViewAwardsUser" layoutX="60.0" layoutY="57.0" prefHeight="681.0" prefWidth="965.0">
+                                                    <columns>
+                                                        <TableColumn fx:id="award_idColumn" prefWidth="251.0" text="award_id" />
+                                                        <TableColumn fx:id="award_nameColumn" prefWidth="263.0" text="award_name" />
+                                                        <TableColumn fx:id="award_descriptionColumn" prefWidth="191.0" text="award_description" />
+                                                        <TableColumn fx:id="year_introducedColumn" prefWidth="253.0" text="year_introduced" />
+                                                    </columns>
+                                                </TableView>
+                                            </children>
+                                        </HBox>
+                                        <VBox layoutX="-1.0" layoutY="265.0" prefHeight="416.0" prefWidth="320.0" style="-fx-background-color: #0094b6;">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="TOP" prefHeight="31.0" prefWidth="300.0" style="-fx-base: #7da9f4;" text="Enter Team Details" textFill="WHITE">
+                                                    <padding>
+                                                        <Insets top="10.0" />
+                                                    </padding>
+                                                </Label>
+                                                <TextField fx:id="awards1" prefHeight="31.0" prefWidth="237.0" promptText="award_id" />
+                                                <TextField fx:id="awards2" prefHeight="31.0" prefWidth="235.0" promptText="award_name" />
+                                                <TextField fx:id="awards3" prefHeight="31.0" prefWidth="231.0" promptText="award_description" />
+                                                <TextField fx:id="awards4" promptText="year_introduced" />
+                                                <Button mnemonicParsing="false" onMouseClicked="#addAwards" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Add Award" textFill="WHITE" />
+                                                <Button fx:id="clearFields4" mnemonicParsing="false" onMouseClicked="#clearHandle" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Clear" textFill="WHITE" />
+                                                <Button mnemonicParsing="false" onMouseClicked="#awardsTablePopulate" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Load Data" textFill="WHITE" />
+                                                <Button mnemonicParsing="false" onMouseClicked="#deleteAwards" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Delete Award" textFill="WHITE" />
+                                                <Button mnemonicParsing="false" onMouseClicked="#updateAwards" prefHeight="31.0" prefWidth="321.0" style="-fx-base: #18496e;" text="Update Award" textFill="WHITE" />
+                                            </children>
+                                            <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                            </padding>
+                                        </VBox>
+                                    </children>
+                                </AnchorPane>
+                                <ImageView fitHeight="230.0" fitWidth="230.0" layoutX="41.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="447.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="1006.0" AnchorPane.topAnchor="14.0">
+                                    <image>
+                                        <Image url="@images/DALL·E%202023-01-04%2021.02.46%20-%20Cristiano%20Ronaldo%20holding%20the%20world%20cup%20in%20digital%20art,%20backround%20is%20dark%20blue%20with%20hints%20of%20quantum%20technology%20pictures.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab style="-fx-base: #18496e;" styleClass="SRC_OVER" text="Exit-Admin">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <AnchorPane layoutX="540.0" layoutY="246.0" prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Button layoutX="64.0" layoutY="71.0" mnemonicParsing="false" onMouseClicked="#handleClose" prefHeight="58.0" prefWidth="72.0" style="-fx-base: #18496e;" text="Exit" />
+                                        <Button layoutX="63.0" layoutY="169.0" mnemonicParsing="false" onMouseClicked="#handleBackSignup" style="-fx-base: #18496e;" text="Go back" />
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

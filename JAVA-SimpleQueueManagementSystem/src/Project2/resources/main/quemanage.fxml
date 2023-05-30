@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #778899;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.HelloController">
+   <children>
+      <AnchorPane layoutX="8.0" layoutY="7.0" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Pane layoutX="-10.0" layoutY="-7.0" prefHeight="607.0" prefWidth="816.0" style="-fx-background-color: #778899; -fx-background-radius: 5;">
+               <children>
+                  <TextField fx:id="numberOfClients" layoutX="472.0" layoutY="507.0" promptText="noOfClients" />
+                  <TextField fx:id="numberOfQueues" layoutX="625.0" layoutY="472.0" promptText="noOfQueues" />
+                  <TextField fx:id="tSim" layoutX="470.0" layoutY="443.0" promptText="tSim" />
+                  <TextField fx:id="tArrMin" layoutX="111.0" layoutY="443.0" promptText="tArrMin" />
+                  <TextField fx:id="tArrMax" layoutX="284.0" layoutY="443.0" promptText="tArrMax" />
+                  <TextArea fx:id="finalData" layoutX="560.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 5;" />
+                  <TextField fx:id="tSerMin" layoutX="111.0" layoutY="506.0" promptText="tSerMin" />
+                  <TextField fx:id="tSerMax" layoutX="284.0" layoutY="507.0" promptText="tSerMax" />
+                  <Button fx:id="startBtn" layoutX="23.0" layoutY="484.0" mnemonicParsing="false" onMouseClicked="#onUserInput" style="-fx-base: #4a646c;" text="User-in" />
+                  <ScrollPane layoutX="60.0" layoutY="33.0" prefViewportHeight="380.0" prefViewportWidth="484.0">
+                     <content>
+                        <TextFlow fx:id="scrollPane" layoutX="60.0" layoutY="33.0" prefHeight="380.0" prefWidth="484.0" style="-fx-base: #f4f0ec;" />
+                     </content>
+                  </ScrollPane>
+                  <Button layoutX="159.0" layoutY="552.0" mnemonicParsing="false" onMouseClicked="#onFirstButtonClick" style="-fx-base: #4a646c;" text="Type1" />
+                  <Button layoutX="332.0" layoutY="552.0" mnemonicParsing="false" onMouseClicked="#onSecondButtonClick" style="-fx-base: #4a646c;" text="Type2" />
+                  <Button layoutX="520.0" layoutY="552.0" mnemonicParsing="false" onMouseClicked="#onThirdButtonClick" style="-fx-base: #4a646c;" text="Type3" />
+                  <TextField editable="false" layoutX="586.0" layoutY="45.0" style="-fx-background-color: #dcdcdc;" text="QUEUE SIM MANAGER " />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

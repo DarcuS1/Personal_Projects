@@ -1,0 +1,22 @@
+drop table if exists Admins cascade;
+create table Admins
+(
+    username varchar(256) PRIMARY KEY,
+    password varchar(256)
+);
+
+drop table if exists Users cascade;
+create table Users
+(
+    username varchar(256) PRIMARY KEY,
+    password varchar(256)
+);
+
+
+insert into Admins values ('admin','admin');
+
+insert into Users values ('user1','user1');
+
+select * from Admins;
+
+select * from Users;
